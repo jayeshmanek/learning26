@@ -1,0 +1,31 @@
+
+.ram-container {
+  min-height: 100vh;
+  background: color( white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 40px;
+  text-align: center;
+}
+
+.ram-title {
+  font-size: 42px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.ram-image {
+  width: 220px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.ram-description {
+  max-width: 800px;
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
