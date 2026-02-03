@@ -6,10 +6,17 @@ import ContentComponent from './Component/ContentComponent';
 import { HeaderComponent } from './Component/HeaderComponent';
 import { FooterComponent } from './Component/FooterComponent';
 import { Demo1 } from './Component/Demo1';
-import { Demo2 } from './Component/Demo2';
-import { Demo3 } from './Component/Demo3';
-import { Demo4 } from './Component/Demo4';
-import { Demo5 } from './Component/Demo5';
+import { NetflixHome } from './Component/NetflixHome';
+import { Route, Routes } from 'react-router-dom';
+import { Navbar } from './Component/Navbar';
+
+import { Netflixshow } from './Component/Netflixshow';
+import { HomeComponent } from './Component/HomeComponent';
+import NetflixSport from "./Component/NetflixSport"
+import NetflixMovies from './Component/NetflixMovies';
+import { NetflixNews } from './Component/NetflixNews';
+
+
 
 //import './App.css'
 
@@ -22,16 +29,23 @@ function App() {
   return (
 
     <div>
-      <HeaderComponent></HeaderComponent>
-      <Demo1></Demo1>
-      <Demo2></Demo2>
-      <Demo3></Demo3>
-      <Demo4></Demo4>
-      <Demo5></Demo5>
       
-      <FooterComponent></FooterComponent>
+    
       
+
+    <Navbar></Navbar>
+     <Routes>
+        <Route path="/netflixhome" element={<NetflixHome />}></Route>
+        <Route path="/netflixmovies" element={<NetflixMovies />}></Route>
+        <Route path="/netflixshow" element={<Netflixshow />}></Route>
+        <Route path="/HomeComponent" element={<HomeComponent />}></Route>
+       <Route path="/netflixsport" element={<NetflixSport />}> </Route>
+       <Route path="/netflixnews" element={<NetflixNews />}> </Route>
+
         
+        <Route path="/" element = {<HomeComponent/>}></Route>
+      </Routes>
+         
    </div>
      
   );

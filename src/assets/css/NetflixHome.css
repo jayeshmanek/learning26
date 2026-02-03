@@ -1,0 +1,66 @@
+.netflix-hero {
+  position: relative;
+  height: 100vh;
+
+  color: white;
+}
+
+/* overlay */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+}
+
+/* content */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  top: 30%;
+  max-width: 800px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hero-content h2 {
+  margin: 20px 0;
+  font-weight: 400;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+}
+
+/* email box */
+.email-box {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.email-box input {
+  padding: 15px;
+  width: 320px;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+}
+
+.email-box button {
+  background: #e50914;
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
