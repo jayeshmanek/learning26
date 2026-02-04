@@ -1,26 +1,33 @@
+/* ===== Netflix Hero Section ===== */
+
 .netflix-hero {
   position: relative;
   height: 100vh;
-
-  color: white;
+  width: 100%;
+  background: url("../images/netflix-bg.jpg") center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* overlay */
+/* Dark overlay */
 .overlay {
   position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.65);
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
 }
 
-/* content */
+/* Center content */
 .hero-content {
   position: relative;
   z-index: 2;
   text-align: center;
-  top: 30%;
+  color: white;
   max-width: 800px;
-  margin: auto;
-  padding: 0 20px;
+  padding: 20px;
 }
 
 .hero-content h1 {
@@ -29,17 +36,17 @@
 }
 
 .hero-content h2 {
-  margin: 20px 0;
-  font-weight: 400;
+  font-size: 1.6rem;
+  margin: 15px 0;
 }
 
 .hero-content p {
   font-size: 1.1rem;
+  margin-bottom: 20px;
 }
 
-/* email box */
+/* Email input + button */
 .email-box {
-  margin-top: 25px;
   display: flex;
   justify-content: center;
   gap: 10px;
@@ -47,20 +54,39 @@
 }
 
 .email-box input {
-  padding: 15px;
   width: 320px;
-  border: none;
+  padding: 14px;
+  font-size: 16px;
   border-radius: 4px;
+  border: none;
   outline: none;
 }
 
 .email-box button {
-  background: #e50914;
+  background-color: red;
   color: white;
+  padding: 14px 24px;
+  font-size: 16px;
   border: none;
-  padding: 15px 25px;
-  font-size: 1.1rem;
-  font-weight: bold;
   border-radius: 4px;
   cursor: pointer;
+}
+
+.email-box button:hover {
+  background-color: #e50914;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content h2 {
+    font-size: 1.2rem;
+  }
+
+  .email-box input {
+    width: 100%;
+  }
 }

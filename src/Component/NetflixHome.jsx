@@ -1,10 +1,27 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "../assets/css/NetflixHome.css"
 
-
 export const NetflixHome = () => {
+
+  // ✅ state to store email
+  const [email, setEmail] = useState("");
+
+  // ✅ button click handler
+  const handleSubmit = () => {
+    if (!email) {
+      alert("Please enter your email");
+      return;
+    }
+
+    console.log("User Email:", email);
+    alert(`Email entered: ${email}`);
+
+    // optional: clear input
+    setEmail("");
+  };
+
   return (
-   <div className="netflix-hero">
+    <div className="netflix-hero">
       {/* dark overlay */}
       <div className="overlay"></div>
 
@@ -17,8 +34,15 @@ export const NetflixHome = () => {
         </p>
 
         <div className="email-box">
-          <input type="email" placeholder="Email address" />
-          <button>Get Started &gt;</button>
+          <input
+            type="email"
+            placeholder="Email address"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <button onClick={handleSubmit}>
+            Get Started &gt;
+          </button>
         </div>
       </div>
     </div>
