@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";   // ✅ ADDED
 
 import cr from "../assets/images/NetflixSport/cricket.jpg";
 import bs from "../assets/images/NetflixSport/basketball.jpg";
@@ -17,38 +18,53 @@ const NetflixSport = () => {
       {/* 🔥 ONE LINE SPORTS ROW */}
       <div className="tv-show-row mt-4">
 
-        {/* Basketball */}
-        <div className="card tv-card">
-          <img src={bs} className="card-img-top" alt="Basketball" />
-          <div className="card-body">
-            <h5 className="card-title">Basketball</h5>
-            <p className="card-text">
-              Watch exciting basketball matches and tournaments.
-            </p>
+        {/* ✅ Basketball */}
+        <Link
+          to="/watch/Basketball"
+          style={{ textDecoration: "none", color: "inherit" }}
+        >
+          <div className="card tv-card">
+            <img src={bs} className="card-img-top" alt="Basketball" />
+            <div className="card-body">
+              <h5 className="card-title">Basketball</h5>
+              <p className="card-text">
+                Watch exciting basketball matches and tournaments.
+              </p>
+            </div>
           </div>
-        </div>
+        </Link>
 
-        {/* Cricket */}
-        <div className="card tv-card">
-          <img src={cr} className="card-img-top" alt="Cricket" />
-          <div className="card-body">
-            <h5 className="card-title">Cricket</h5>
-            <p className="card-text">
-              Enjoy live cricket matches, highlights, and analysis.
-            </p>
+        {/* ✅ Cricket */}
+        <Link
+          to="/watch/Cricket"
+          style={{ textDecoration: "none", color: "inherit" }}
+        >
+          <div className="card tv-card">
+            <img src={cr} className="card-img-top" alt="Cricket" />
+            <div className="card-body">
+              <h5 className="card-title">Cricket</h5>
+              <p className="card-text">
+                Enjoy live cricket matches, highlights, and analysis.
+              </p>
+            </div>
           </div>
-        </div>
+        </Link>
 
-        {/* Formula 1 */}
-        <div className="card tv-card">
-          <img src={f1} className="card-img-top" alt="Formula 1" />
-          <div className="card-body">
-            <h5 className="card-title">Formula 1</h5>
-            <p className="card-text">
-              High-speed racing action and behind-the-scenes coverage.
-            </p>
+        {/* ✅ Formula 1 */}
+        <Link
+          to="/watch/Formula 1"
+          style={{ textDecoration: "none", color: "inherit" }}
+        >
+          <div className="card tv-card">
+            <img src={f1} className="card-img-top" alt="Formula 1" />
+            <div className="card-body">
+              <h5 className="card-title">Formula 1</h5>
+              <p className="card-text">
+                High-speed racing action and behind-the-scenes coverage.
+              </p>
+            </div>
           </div>
-        </div>
+        </Link>
 
       </div>
     </div>

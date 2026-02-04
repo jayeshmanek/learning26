@@ -1,0 +1,47 @@
+/* ===== IPL TEAM ROW ===== */
+.tv-show-row {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ===== CARD SAME SIZE ===== */
+.tv-card {
+  width: 220px;
+  height: 360px;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tv-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== IMAGE SAME SIZE ===== */
+.tv-card img {
+  width: 100%;
+  height: 180px;          /* 🔥 SAME HEIGHT FOR ALL LOGOS */
+  object-fit: contain;    /* keeps logo aspect ratio */
+  background-color: #f5f5f5;
+  padding: 10px;
+}
+
+/* ===== CARD BODY ===== */
+.tv-card .card-body {
+  text-align: center;
+  padding: 12px;
+}
+
+.tv-card .card-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.tv-card .card-text {
+  font-size: 14px;
+  color: #555;
+}

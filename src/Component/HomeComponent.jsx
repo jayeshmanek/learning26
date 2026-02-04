@@ -1,4 +1,5 @@
 import React from 'react'
+import"../assets/css/Navabar.css"
 
 export const HomeComponent = () => {
 

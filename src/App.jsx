@@ -15,10 +15,9 @@ import { HomeComponent } from './Component/HomeComponent';
 import NetflixSport from "./Component/NetflixSport"
 import NetflixMovies from './Component/NetflixMovies';
 import { NetflixNews } from './Component/NetflixNews';
-
-
-
-//import './App.css'
+import { ErrorNotFound } from './Component/ErrorNotFound';
+import  Watch  from './Component/Watch';
+import IPLTeams from './Component/IplTeam';
 
 function App() {
   
@@ -41,10 +40,21 @@ function App() {
         <Route path="/HomeComponent" element={<HomeComponent />}></Route>
        <Route path="/netflixsport" element={<NetflixSport />}> </Route>
        <Route path="/netflixnews" element={<NetflixNews />}> </Route>
+       <Route path="/ipl" element={<IPLTeams/>}></Route>
+       <Route path="/" element = {<HomeComponent/>}></Route>
 
+
+
+          {/* Dynamic watch page */}
+        <Route path="*" element={<ErrorNotFound />} />
+        <Route path="/watch/:movieName" element={<Watch />} />
+      
+       
+     
         
-        <Route path="/" element = {<HomeComponent/>}></Route>
-      </Routes>
+        
+        
+         </Routes>
          
    </div>
      

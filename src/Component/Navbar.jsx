@@ -9,19 +9,9 @@ export const Navbar = () => {
         NETFLIX
       </NavLink>
 
-      {/* Toggle Button */}
-      <button
-        className="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span className="navbar-toggler-icon"></span>
-      </button>
-
+     
+    
+        
       {/* Menu */}
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav ms-auto mb-2 mb-lg-0 gap-3">
@@ -56,10 +46,18 @@ export const Navbar = () => {
           </li>
 
           <li className="nav-item">
+           <NavLink className="nav-link" to="/Ipl">
+            IplTeam
+          </NavLink>
+          </li>
+
+          <li className="nav-item">
            <NavLink className="nav-link" to="/netflixnews">
             News
           </NavLink>
           </li>
+
+        
 
 
         </ul>

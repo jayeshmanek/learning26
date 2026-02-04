@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";   // ✅ ADDED
 
 import mh from "../assets/images/Moneyheist.jpg";
 import wd from "../assets/images/Wednesday.jpg";
@@ -17,39 +18,54 @@ export const Netflixshow = () => {
       {/* 🔥 ONE LINE CARD ROW */}
       <div className="tv-show-row mt-4">
 
-        {/* Stranger Things */}
-        <div className="card tv-card">
-          <img src={st} className="card-img-top" alt="Stranger Things" />
-          <div className="card-body">
-            <h5 className="card-title">Stranger Things</h5>
-            <p className="card-text">
-              Nine noble families fight for control over the lands of Westeros,
-              while an ancient enemy rises in the north.
-            </p>
+        {/* ✅ Stranger Things */}
+        <Link
+          to="/watch/Stranger Things"
+          style={{ textDecoration: "none", color: "inherit" }}
+        >
+          <div className="card tv-card">
+            <img src={st} className="card-img-top" alt="Stranger Things" />
+            <div className="card-body">
+              <h5 className="card-title">Stranger Things</h5>
+              <p className="card-text">
+                Nine noble families fight for control over the lands of Westeros,
+                while an ancient enemy rises in the north.
+              </p>
+            </div>
           </div>
-        </div>
+        </Link>
 
-        {/* Money Heist */}
-        <div className="card tv-card">
-          <img src={mh} className="card-img-top" alt="Money Heist" />
-          <div className="card-body">
-            <h5 className="card-title">Money Heist</h5>
-            <p className="card-text">
-              A criminal mastermind plans the biggest heist in history.
-            </p>
+        {/* ✅ Money Heist */}
+        <Link
+          to="/watch/Money Heist"
+          style={{ textDecoration: "none", color: "inherit" }}
+        >
+          <div className="card tv-card">
+            <img src={mh} className="card-img-top" alt="Money Heist" />
+            <div className="card-body">
+              <h5 className="card-title">Money Heist</h5>
+              <p className="card-text">
+                A criminal mastermind plans the biggest heist in history.
+              </p>
+            </div>
           </div>
-        </div>
+        </Link>
 
-        {/* Wednesday */}
-        <div className="card tv-card">
-          <img src={wd} className="card-img-top" alt="Wednesday" />
-          <div className="card-body">
-            <h5 className="card-title">Wednesday</h5>
-            <p className="card-text">
-              Wednesday Addams investigates strange events at her school.
-            </p>
+        {/* ✅ Wednesday */}
+        <Link
+          to="/watch/Wednesday"
+          style={{ textDecoration: "none", color: "inherit" }}
+        >
+          <div className="card tv-card">
+            <img src={wd} className="card-img-top" alt="Wednesday" />
+            <div className="card-body">
+              <h5 className="card-title">Wednesday</h5>
+              <p className="card-text">
+                Wednesday Addams investigates strange events at her school.
+              </p>
+            </div>
           </div>
-        </div>
+        </Link>
 
       </div>
     </div>
