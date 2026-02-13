@@ -18,6 +18,9 @@ import { NetflixNews } from './Component/NetflixNews';
 import { ErrorNotFound } from './Component/ErrorNotFound';
 import  Watch  from './Component/Watch';
 import IPLTeams from './Component/IplTeam';
+import { FunctionDemo1 } from './Component/FunctionDemo1';
+import { UseStateDemo1 } from './Component/UseStateDemo1';
+import { UseStateDemo2 } from './Component/UseStateDemo2';
 
 function App() {
   
@@ -40,6 +43,12 @@ function App() {
         <Route path="/HomeComponent" element={<HomeComponent />}></Route>
        <Route path="/netflixsport" element={<NetflixSport />}> </Route>
        <Route path="/netflixnews" element={<NetflixNews />}> </Route>
+       <Route path="/FunctionDemo1" element={<FunctionDemo1 />}></Route>
+       <Route path="/usestatedemo1" element ={<UseStateDemo1/>}></Route>
+      <Route path="/usestatedemo2" element ={<UseStateDemo2/>}></Route>
+
+
+
        <Route path="/ipl" element={<IPLTeams/>}></Route>
        <Route path="/" element = {<HomeComponent/>}></Route>
 
