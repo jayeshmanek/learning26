@@ -16,4 +16,6 @@ export const UseStateDemo2 = () => {
         <button onClick={stopLoader}>STOP</button>
     </div>
   )
-}
+};
+
+export default UseStateDemo2;

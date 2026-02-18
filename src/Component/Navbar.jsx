@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom"
-
+import "../assets/css/Navabar.css"
 export const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark px-4 shadow">
@@ -25,7 +25,7 @@ export const Navbar = () => {
             </NavLink>
           </li>
 
-          <li className="nav-item">
+         {/* <li className="nav-item">
             <NavLink
               to="/netflixshow"
               className="nav-link"
@@ -73,14 +73,71 @@ export const Navbar = () => {
            <NavLink className="nav-link" to="/usestatedemo2">
             UseStateDemo2
           </NavLink>
+          </li>*/}
+
+         <li className="nav-item">
+            <NavLink className="nav-link" to="/employees">
+              employees
+            </NavLink>
           </li>
 
+          <li className="nav-item">
+            <NavLink className="nav-link" to="/CardComponent">
+              CardComponent
+            </NavLink>
+          </li>
 
-        
+          <li className="nav-item">
+            <NavLink className="nav-link" to="/inputdemo1">
+              inputdemo1
+            </NavLink>
+          </li>
 
+          <li className="nav-item">
+            <NavLink className="nav-link" to="/inputdemo2">
+              inputdemo2
+            </NavLink>
+          </li>
+
+          <li className="nav-item">
+            <NavLink className="nav-link" to="/Formdemo1">
+              FormDemo1
+            </NavLink>
+          </li>
+
+          <li className="nav-item">
+            <NavLink className="nav-link" to="/FormDemo2">
+              FormDemo2
+            </NavLink>
+          </li>
+
+          <li className="nav-item">
+            <NavLink className="nav-link" to="/FormStudent">
+              FormStudent
+            </NavLink>
+          </li>
+          
+          <li className="nav-item">
+            <NavLink className="nav-link" to="/ApiDemo1">
+              ApiDemo1
+            </NavLink>
+          </li>
+  
+          <li className="nav-item">
+            <NavLink className="nav-link" to="/Apitable">
+              Apitable
+            </NavLink>
+          </li>
+          
+          <li className="nav-item">
+            <NavLink className="nav-link" to="/Apicall">
+          Apicall
+            </NavLink>
+          </li>
 
         </ul>
       </div>
     </nav>
   )
 }
+
