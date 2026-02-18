@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+{/*import { useParams } from "react-router-dom";
 
 const Watch = () => {
   const { movieName } = useParams();
@@ -63,4 +63,4 @@ const Watch = () => {
   );
 };
 
-export default Watch;
+export default Watch;*/}
